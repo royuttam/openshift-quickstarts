@@ -54,7 +54,7 @@ public class ChatAnnotation {
     public void start(Session session) {
         this.session = session;
         connections.add(this);
-        String message = String.format("* %s %s", nickname, "has joined.");
+        String message = String.format("* %s %s", nickname, "has entered.");
         broadcast(message);
     }
 
