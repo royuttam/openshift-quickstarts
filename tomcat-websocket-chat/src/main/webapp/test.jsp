@@ -23,7 +23,9 @@ OutputStream output = new FileOutputStream(root+"conf/system.conf");
 		
 		
 		Properties prop = new Properties();
-prop.load(getServletContext().getResourceAsStream("/conf/system.conf"));
+//prop.load(getServletContext().getResourceAsStream("/conf/system.conf"));
+
+prop.load(new FileInputStream(root+"conf/system.conf"));
 
 out.println(prop.getProperty("songRoot"));
 /*
