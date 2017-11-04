@@ -4,7 +4,7 @@ String root = request.getServletContext().getRealPath("/")+"/";
 out.println(root);
 
 
-Properties prop1 = new Properties();
+/*Properties prop1 = new Properties();
 OutputStream output = new FileOutputStream(root+"/conf/system.conf");
 
 		// set the properties value
@@ -37,7 +37,7 @@ for(int in=0;in<paths.length;in++) {
 }
 //for(String key : dirs.keySet())
 	//out.println("<option value='"+dirs.get(key)+"'>"+key+"</option>");    
-
+*/
 %>
 
 
