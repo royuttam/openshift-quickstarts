@@ -19,7 +19,7 @@ OutputStream output = new FileOutputStream(root+"conf/system.conf");
 		// save properties to project root folder
 		prop1.store(output, null);
 		
-/*		
+		
 		
 		
 		Properties prop = new Properties();
@@ -37,7 +37,7 @@ for(int in=0;in<paths.length;in++) {
 }
 //for(String key : dirs.keySet())
 	//out.println("<option value='"+dirs.get(key)+"'>"+key+"</option>");    
-*/
+
 %>
 
 
