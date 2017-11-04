@@ -4,8 +4,8 @@ String root = request.getServletContext().getRealPath("/")+"/";
 out.println(root);
 
 
-/*Properties prop1 = new Properties();
-OutputStream output = new FileOutputStream(root+"/conf/system.conf");
+Properties prop1 = new Properties();
+OutputStream output = new FileOutputStream(root+"conf/system.conf");
 
 		// set the properties value
 		prop1.setProperty("songRoot", root+"songs/");
@@ -19,7 +19,7 @@ OutputStream output = new FileOutputStream(root+"/conf/system.conf");
 		// save properties to project root folder
 		prop1.store(output, null);
 		
-		
+/*		
 		
 		
 		Properties prop = new Properties();
