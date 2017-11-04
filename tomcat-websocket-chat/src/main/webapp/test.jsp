@@ -30,6 +30,8 @@ prop.load(new FileInputStream(root+"conf/system.conf"));
 out.println(prop.getProperty("songRoot"));
 
 File[] paths = new File(prop.getProperty("songRoot")).listFiles();
+out.println(paths);
+/*
 Map<String, String> dirs = new TreeMap<String, String>();
 for(int in=0;in<paths.length;in++) {
 	String file=paths[in].getName().toString();
@@ -39,7 +41,7 @@ for(int in=0;in<paths.length;in++) {
 }
 //for(String key : dirs.keySet())
 	//out.println("<option value='"+dirs.get(key)+"'>"+key+"</option>");    
-
+*/
 %>
 
 
