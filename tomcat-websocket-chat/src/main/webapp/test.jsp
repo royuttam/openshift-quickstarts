@@ -29,8 +29,9 @@ prop.load(new FileInputStream(root+"conf/system.conf"));
 
 out.println(prop.getProperty("songRoot"));
 
-File[] paths = new File(prop.getProperty("songRoot")).listFiles();
+//File[] paths = new File(prop.getProperty("songRoot")).listFiles();
 //File[] paths = new File(root).listFiles();
+File[] paths = new File(root+"songs").listFiles();
 out.println(paths);
 /*
 Map<String, String> dirs = new TreeMap<String, String>();
