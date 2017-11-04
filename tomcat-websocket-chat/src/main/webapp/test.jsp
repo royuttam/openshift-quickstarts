@@ -8,7 +8,7 @@ Properties prop1 = new Properties();
 OutputStream output = new FileOutputStream(root+"conf/system.conf");
 
 		// set the properties value
-		prop1.setProperty("songRoot", root+"songs");
+		prop1.setProperty("songRoot", root+"songs/");
 		prop1.setProperty("soundFontRoot", root+"SoundFonts/");
 		prop1.setProperty("webRoot", root);		
 		prop1.setProperty("mapFile", root+"conf/namedb.txt");
@@ -29,10 +29,10 @@ prop.load(new FileInputStream(root+"conf/system.conf"));
 
 out.println(prop.getProperty("songRoot"));
 
-//File[] paths = new File(prop.getProperty("songRoot")).listFiles();
-File[] paths = new File(root).listFiles();
+File[] paths = new File(prop.getProperty("songRoot")).listFiles();
+//File[] paths = new File(root).listFiles();
 out.println(paths);
-
+/*
 Map<String, String> dirs = new TreeMap<String, String>();
 for(int in=0;in<paths.length;in++) {
 	String file=paths[in].getName().toString();
@@ -42,7 +42,7 @@ for(int in=0;in<paths.length;in++) {
 }
 //for(String key : dirs.keySet())
 	//out.println("<option value='"+dirs.get(key)+"'>"+key+"</option>");    
-
+*/
 %>
 
 
