@@ -8,7 +8,7 @@ Properties prop1 = new Properties();
 OutputStream output = new FileOutputStream(root+"conf/system.conf");
 
 		// set the properties value
-		prop1.setProperty("songRoot", root+"songs/");
+		prop1.setProperty("songRoot", root+"songs");
 		prop1.setProperty("soundFontRoot", root+"SoundFonts/");
 		prop1.setProperty("webRoot", root);		
 		prop1.setProperty("mapFile", root+"conf/namedb.txt");
