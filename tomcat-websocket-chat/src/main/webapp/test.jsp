@@ -25,8 +25,8 @@ OutputStream output = new FileOutputStream(root+"conf/system.conf");
 		Properties prop = new Properties();
 prop.load(getServletContext().getResourceAsStream("/conf/system.conf"));
 
-
-
+out.println(prop.getProperty("songRoot"));
+/*
 File[] paths = new File(prop.getProperty("songRoot")).listFiles();
 Map<String, String> dirs = new TreeMap<String, String>();
 for(int in=0;in<paths.length;in++) {
@@ -37,7 +37,7 @@ for(int in=0;in<paths.length;in++) {
 }
 //for(String key : dirs.keySet())
 	//out.println("<option value='"+dirs.get(key)+"'>"+key+"</option>");    
-
+*/
 %>
 
 
